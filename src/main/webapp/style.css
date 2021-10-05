@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Glory', sans-serif;
+    background-color: #b5b7bd;
+    padding-bottom: 5vh;
+}
+
+header {
+    text-align: center;
+    vertical-align: center;
+    background-color: coral;
+    height: 15vh;
+}
+
+header h1 {
+    font-size: 7vh;
+    line-height: 15vh;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#form form input {
+    width: 40vw;
+    margin-top: 5vh;
+    height: 3vh;
+    border: 2px solid black;
+}
+
+#form form button {
+    margin-top: 1vh;
+    width: 10vw;
+    border: 2px solid black;
+    border-radius: 25px;
+    align-self: center;
+}
+
+#incorrectUrlDiv {
+    height: 5vh;
+    width: 40vw;
+    margin: 3vh auto auto;
+    padding: 1vh;
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 20px;
+    background-color: red;
+    opacity: 0.5;
+}
+
+#infoMsg {
+    opacity: 1;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #b5b7bd;
+}
+
+#matches {
+    text-align: center;
+}
+
+.match {
+    display: flex;
+}
+
+.matchInfo {
+    width: 40vw;
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    background-color: #797c82;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 20px;
+    /*padding: 1vw;*/
+}
+
+.club {
+    width: 15vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*background-color: crimson;*/
+    /*border: 1px solid red;*/
+}
+
+.match .club span.clubName {
+    font-size: 3vh;
+    font-weight: bold;
+    padding: 5%;
+}
+
+.match .club span.additionalData {
+    font-weight: bold;
+}
+
+.odds {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    flex-grow: 1;
+    background-color: #30333b;
+    color: yellow;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1vh;
+    background-color: #30333b;
+    color: white;
+    font-weight: normal;
+}
+
+footer p {
+    height: 2vh;
+    line-height: 2vh;
+}
+
+footer img {
+    height: 2vh;
+}
+
+section .matches .loading {
+    background-color: black;
+}
+
+#loader {
+    display: none;
+    text-align: center;
+    margin-top: 5vh;
+    color: white;
+    font-weight: normal;
+}
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

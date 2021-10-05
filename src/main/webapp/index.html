@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BET Helper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <h1>BET Helper</h1>
+</header>
+<div id="form">
+    <form>
+        <input type="text" name="url" placeholder="urlToBets" />
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</div>
+<div id="loader">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <p>Loading data. It will take approximately 1 minute.</p>
+</div>
+<section id="matches"></section>
+<footer>
+    <div>
+        <p>All odds are extracted from https://www.efortuna.pl
+            <img src="images/fortuna-logo.png" alt="fortuna logo"></p>
+    </div>
+    <div>
+        <p>All squad values are extracted from https://www.transfermarkt.pl
+            <img src="images/transfermarkt-logo.png" alt="transfermarkt logo"></p>
+    </div>
+</footer>
+</body>
+<script src="scripts.js"></script>
+</html>
