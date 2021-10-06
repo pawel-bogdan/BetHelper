@@ -9,5 +9,5 @@ Bet Helper makes easier and speeds up information researching about actual footb
 This project is simple Lorem ipsum dolor generator.
 
 ## Example of use
-![idk](/images_github/logo.png)
+![idk](/images_github/bet_helper_example_loaded_list.png)
 Format: ![Alt Text](url)
