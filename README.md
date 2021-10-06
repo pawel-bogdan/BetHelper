@@ -7,6 +7,7 @@ Bet Helper makes easier and speeds up information researching about actual footb
 
 ## General info
 Bet Helper makes easier and speeds up information researching about actual football matches in offer of one of the most famous polish bookmaker(Fortuna).
+It downloads informations like squads value, odds etc. They are located at a few football-themed websites so manual searching would take much more time. It also calculates SVC Ratio(Squad value/course).
 It is build using technologies such as: 
 * Java
 * Maven
